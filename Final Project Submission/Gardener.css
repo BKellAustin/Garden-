@@ -1,0 +1,213 @@
+* {
+box-sizing: border-box;
+}
+
+
+body {background-color:#BEC6C3;
+color:#7E7E54;
+font-family: Verdana, Arial, sans-serif;
+text-align:left;}
+
+main {text-align: center;
+
+}
+
+p {
+	text-indent: 4em;
+}
+header {background-color:#CCCCCC;
+text-align:center;}
+
+#mobile { display: none;}
+#desktop { display: inline;}
+
+
+
+
+
+h1 { background-image: url(border.jpg);
+background-repeat: no-repeat;
+background-size: 100% 200%;
+line-height:400%;line-height: 200px; 
+font-size: 3em; 
+text-align: center;
+font-family: Lucida Handwriting, Brush Script, Comic Sans MS;
+text-shadow: 2px 2px black;
+color:#729C65;
+}
+
+h2 {color:#336600;
+text-align: center;
+font-weight: bold;
+font-style: italic;
+font-family: Georgia, "Times New Roman", serif;
+}
+
+h3  {color:#336600;
+text-align: center;
+font-weight: bold;
+font-style: italic;
+font-family: Georgia, "Times New Roman", serif;
+}
+
+nav {
+font-weight: bold;
+text-align:center;
+font-size: 1.2em;
+
+}
+
+nav a:link { color:#5F6F3A ;}
+
+nav a:visited { color:green;}
+
+nav a:hover { color:yellow; border: 3px inset #CCCCCC;}
+
+nav a { 
+text-decoration: none; 
+text-align: center;
+font-style:italic;
+border: 3px outset #CCCCCC;
+padding-top: 0.75em;
+padding-bottom: 0.75em;
+padding-left: 1em;
+padding-right: 1em;
+
+}
+
+table {
+margin: auto;
+width: 90%;
+border: 0;
+
+}
+
+
+td, th {
+padding: 10px;
+color:black;
+}
+tr:nth-of-type(odd) {
+ background-color: #6B7D3F;
+}
+
+
+form {
+padding: 2em;
+}
+
+label {
+float: left;
+display: block;
+text-align: right;
+width: 10em;
+padding-right: 2em;
+}
+
+
+input, textarea {
+display: block;
+margin-bottom: 1em;
+}
+
+
+#mySubmit {
+margin-left: 9.5em;
+}
+
+footer {
+color:black;
+font-size:.50em;
+font-style:italic;
+text-align:right;
+clear:both;
+
+}
+
+#wrapper {margin-left: auto;
+margin-right: auto;
+width: 80%;}
+figcaption {text-align:right}
+
+ul {
+text-align:left;
+padding-left: 3em;
+padding-right: 2em;
+color:#283836;
+font-weight: bold;
+}
+
+#indent {margin-left: 300px;
+}
+
+.bold {font-weight: bold;
+text-shadow: 1.5px 1.5px black;
+
+}
+
+#gallery { position: relative; }
+figure { position: absolute;
+         left: 600px;
+		 text-align: center;
+		 opacity: .25; }
+#gallery ul { width: 500px; 
+              list-style-type: none;
+}
+#gallery li { display: inline; 
+              float: left;
+			  padding: 10px;
+}
+#gallery img { border-style: none; }
+#gallery a { color: #eaeaea;
+             text-decoration: none; 
+			 font-style: italic;
+}
+#gallery span { position: absolute; 
+                left: -1000px;
+				opacity: 0;
+                transition: opacity 3s ease-in-out; 
+}
+#gallery a:hover span { position: absolute;
+                        top: 16px; 
+						left: 635px;
+                        text-align: center; 
+						opacity: 1;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	body 	{ margin: 0; }
+	#wrapper{ width: auto; min-width: 0; margin: 0; padding: 0; box-shadow: none;}
+	header  { border-bottom: 5px solid #CCCCCC;}
+	h1 		{ background-image:none; margin-top: 0; margin: 20px; padding-top: 0.2em; font-size:2em; line-height:2px;}
+	nav		{ float: none; width: auto; padding-top: 0; margin:10px; font-size: 1.3em;}
+	nav li	{ display: inline-block;}
+	nav a	{ padding: 1em; width: 8em; font-weight: bold; border-style: none;}
+	nav ul	{ padding: 0; margin: 0;}
+	main	{ margin: 0; font-size: 90% }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+	#indent {margin-left: 10px;}
+	img {width: 300px; height: 300px; float: none;}
+	
+	
+}
+
+@media only screen and (max-width: 768px) {
+	header	{ background-color: #CCCCCC; background-repeat:no-repeat;}
+	h1		{ background-image:none ;font-size: 1em; text-align: center; margin: 5px; }
+	nav		{ margin: 0;font-size: 1em;}
+	nav	a 	{ display: block; padding: 0.2em; width: auto; border-bottom: 1px; border-color: #CCCCCC;}
+	nav li	{ display: block;}
+	main 	{ padding-top: 1px;}
+	h2		{ padding-top: 0.5em; padding-right: 0; padding-bottom: 0; padding-left: 0.5em; margin: 0.5em;}
+	.bold{ padding-left: 0; padding-right: 0;}
+	#mobile { display: inline; }
+	#desktop { display: none; }
+	#indent {margin-left: 10px;}
+	img {width: 300px; height: 300px; float: none;}
+}
+
+
+
+
